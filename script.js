@@ -19,14 +19,12 @@ function updateTextInput(val) {
     var rate=document.getElementById('interestRate').value;
     var time=document.getElementById('years').value;
     var result=(principal*rate*time)/100;
-    var princi=parseInt(principal);
     var period=parseInt(time);
-    var total = result + princi;
     var finishingYear = presentYear + period;
-    finalRate=rate+myUnits;
+    var finalRate=rate+myUnits;
     document.getElementById('enteredAmount').innerHTML = "If you deposit <span id='finalPrincipal'>"+principal+"</span>,";
     document.getElementById('enteredInterestRate').innerHTML = "at a rate of <span id='finalRate'>"+ finalRate+"</span>."
-    document.getElementById('totalAmount').innerHTML = "You will receive an amount of <span id='total'>"+total+"</span>,";
+    document.getElementById('totalAmount').innerHTML = "You will receive an amount of <span id='total'>"+result+"</span>,";
     document.getElementById('finishingyear').innerHTML = "in the year <span id='end'>"+ finishingYear;+"</span>"
     return dynamicStyle();
   }
