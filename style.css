@@ -24,7 +24,16 @@ h1{
 .rich{
 padding-left: 15px;
 }
+    /* For mobile phones: */
+[class="div"] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .div {width: 35%;}
     
+  }
     
 
 
