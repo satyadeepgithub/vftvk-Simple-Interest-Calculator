@@ -3,7 +3,7 @@ var myUnits = "%";
 const d = new Date();
 presentYear=d.getFullYear();
 function updateTextInput(val) {
-    document.getElementById('interestRate').innerHTML=val +' '+ myUnits; 
+    document.getElementById('interestValue').innerHTML=val +' '+ myUnits; 
   }
    
   function getfocus() {
